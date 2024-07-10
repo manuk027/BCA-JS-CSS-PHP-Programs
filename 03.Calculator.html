@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Calculator</title>
+          <script language="Javascript" type="text/javascript">
+               function addition()
+               {
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    result = a + b;
+                    document.getElementById("result").innerHTML = a + "+" + b + "= " + result;
+               }
+               function subtraction()
+               {
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    result = a - b;
+                    document.getElementById("result").innerHTML = a + "-" + b + "= " + result;
+               }
+               function multiplication()
+               {
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    result = a * b;
+                    document.getElementById("result").innerHTML = a + "*" + b + "= " + result;
+               }
+               function division()
+               {
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    result = a / b;
+                    document.getElementById("result").innerHTML = a + "/" + b + "= " + result;
+               }
+          </script>
+     </head>
+     <body>
+          <h1>Calculator</h1>
+          <form>
+               Enter number 1:
+               <input type="text" id="a"><br>
+               Enter number 2:
+               <input type="text" id="b"><br>
+               <input type="button" value="Addition" onclick="addition()"><br>
+               <input type="button" value="Subtraction" onclick="subtraction()"><br>
+               <input type="button" value="Multiplication" onclick="multiplication()"><br>
+               <input type="button" value="Division" onclick="division()"><br>
+          </form>
+          <p id="result"></p>
+     </body>
+</html>

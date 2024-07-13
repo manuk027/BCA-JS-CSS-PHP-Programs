@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Color change</title>
+     </head>
+     <body>
+          Enter text:
+          <input type="text" id="textBox" onfocus = change(0) onblur = change(1)>
+          <script>
+               function change(i)
+               {
+                    if (i == 0)
+                    {
+                         document.getElementById("textBox").style.backgroundColor = "lightgrey";
+                         document.getElementById("textBox").style.backgroundColor = "skyblue";
+                    }
+                    else
+                    {
+                         document.getElementById("textBox").style.backgroundColor = "white";
+                         document.getElementById("textBox").style.backgroundColor = "black";
+                    }
+               }
+          </script>
+     </body>
+</html>

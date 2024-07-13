@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Changing background color</title>
+     </head>
+     <body id="body">
+          <input type="button" onclick="changeBg(0)" value="Red">
+          <input type="button" onclick="changeBg(1)" value="Yellow">
+          <input type="button" onclick="changeBg(2)" value="Blue">
+          <input type="button" onclick="changeBg(3)" value="Green">
+          <input type="button" onclick="changeBg(4)" value="Orange">
+          <script>
+               function changeBg(i)
+               {
+                    const colors = ["red", "yellow", "blue", "green", "orange"];
+                    document.body.style.background = colors[i];
+               }
+          </script>
+     </body>
+</html>

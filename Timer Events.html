@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Timer</title>
+</head>
+<body onload="showClock()">
+     <h1>Clock</h1>
+     <div id="Clock"></div>
+     <script>
+          function showClock() {
+               var c_time = new Date();
+               var hour = c_time.getHours();
+               var min = c_time.getMinutes();
+               var sec = c_time.getSeconds();
+               var clock_t = hour + ":" + min + ":" + sec;
+               document.getElementById("Clock").innerHTML = clock_t;
+               setTimeout(showClock, 1000);
+          }
+     </script>
+</body>
+</html>

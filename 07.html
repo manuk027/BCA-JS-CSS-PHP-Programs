@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Prime Number</title>
+</head>
+<body>
+     <input type="number" id="n_value" placeholder="Enter a number">
+     <button onclick="lastPrime()">Find Largest Prime</button>
+     <input type="text" id="result" readonly>
+     <script>
+          function isPrime(num) {
+               if (num <= 1) return false;
+               if (num === 2 || num === 3) return true;
+               if (num % 2 === 0 || num % 3 === 0) return false;
+               for (var i = 5; i * i <= num; i += 6) {
+                    if (num % i === 0 || num % (i + 2) === 0) return false;
+               }
+               return true;
+          }
+
+          function lastPrime(){
+               var n = parseInt(document.getElementById("n_value").value);
+               var prime = -1;  // Initialize prime as -1 if no primes found
+               
+               for (var i = n - 1; i >= 2; i--){
+                    if (isPrime(i)){
+                         prime = i;
+                         break;
+                    }
+               }
+
+               if (prime !== -1) {
+                    document.getElementById("result").value = prime;
+               } else {
+                    document.getElementById("result").value = "No prime number found!";
+               }
+          }
+     </script>
+</body>
+</html>

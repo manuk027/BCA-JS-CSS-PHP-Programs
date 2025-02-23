@@ -1,0 +1,15 @@
+h1{
+     text-align: center;
+     padding: 5px;
+     margin: 20px;
+     width: 100%;
+}
+.img_box{
+     display: flex;
+     flex: row;
+     padding: 5px;
+}
+.imo{
+     height: 45%;
+     width: 33%;
+}

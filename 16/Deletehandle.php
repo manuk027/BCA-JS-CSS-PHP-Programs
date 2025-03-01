@@ -17,3 +17,10 @@
     ?>
   </body>
 </html>
+
+
+<!-- 
+use database ph;
+create table account(accno varchar(20), name varchar(20), amount varchar(10));
+insert into account values('01', 'Manu', '20000'), ('02', 'Sibin', '5000'), ('03', 'Vishnu', '10000'));
+-->

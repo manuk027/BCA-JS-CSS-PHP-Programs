@@ -1,0 +1,4 @@
+create database inventory;
+use inventory;
+create table users(username varchar(20), password varchar(20));
+insert into users('Manu', 'Manu123'), ('Sibin', 'Sibin 123');

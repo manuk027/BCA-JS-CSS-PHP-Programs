@@ -13,7 +13,7 @@
           session_start();
           $_session['name'] = $n;
           echo "Hello!";
-          echo $sesssion['name'];
+          echo $session['name'];
           echo "<br>";
           session_destroy();
         }
@@ -22,4 +22,4 @@
         }
       ?>
   </body>
-</htmml>
+</html>

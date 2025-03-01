@@ -10,7 +10,7 @@
       }
       else
       {
-        
+        echo "Invalid entry";
       }
     ?>
   </body>

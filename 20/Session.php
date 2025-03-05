@@ -4,7 +4,7 @@
 ?>
 <?php
   $u = $_POST['txtname'];
-  $p = $_POST['txtpasswwor'];
+  $p = $_POST['txtpassword'];
   mysql_connect("localhost", "root", "tiger");
   mysql_selectdb("Inventory");
   $query = "selecct * from members where username='$u' & passwword = '$p';";

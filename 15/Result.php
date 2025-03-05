@@ -18,7 +18,7 @@
         echo "<tr><td>Network:</td><td>{$row[4]}</td></tr>";
         echo "<tr><td>Grade:</td><td>{$row[5]}</td></tr>";
       }
-      echo "</tables>"
+      echo "</tables>";
       echo "</center>";
     ?>
   </body>

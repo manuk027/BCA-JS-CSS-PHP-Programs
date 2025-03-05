@@ -9,7 +9,7 @@
   mysql_selectdb("Inventory");
   $query = "selecct * from members where username='$u' & passwword = '$p';";
   $result= mysql_query($query);
-  $nos = mysql_num_row($result);
+  $nos = mysql_num_rows($result);
   if($nos == 1){
     echo "$u, you are successfully logged-in";
   }

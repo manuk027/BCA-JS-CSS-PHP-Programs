@@ -16,7 +16,7 @@
           $fibonacci[$i] = $fibonacci[$i-1] + $fibonacci[$i-2];
         }
         foreach($fibonacci as $i){
-          echo $i . "<br>";
+          echo $i."<br>";
         }
       }
     ?>

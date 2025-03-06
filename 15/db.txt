@@ -1,0 +1,9 @@
+CREATE DATAABASE marklist;
+
+USE marklist;
+
+CREATE TABLE students(regno VARCHAR(10), name VARCHAAR(10), ap VARCHAR(5), os VARCHAR(5), network VARCHAR(5), grade VARCHAAR(5));
+
+INSERT INTO students VALUES('009', 'Manu', '55', '65', '75', 'B');
+
+SELECT * FROM students;

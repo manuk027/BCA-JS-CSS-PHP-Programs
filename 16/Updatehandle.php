@@ -6,7 +6,7 @@
       $r=$_POST['accno'];
       $query = "update account set amount = amount + 240 where accno='$r'";
       $result=mysql_query($query);
-      if(mysql_query_rows()==1){
+      if(mysql_query_rows() == 1){
       }
       else
       {

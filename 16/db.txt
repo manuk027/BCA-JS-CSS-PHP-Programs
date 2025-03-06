@@ -2,8 +2,8 @@ CREATE DATABASE ph;
 
 USE database ph;
 
-CREATE TABLE account(accno VARCHAR(20), name VARCHAR(20), amount float);
+CREATE TABLE account (accno VARCHAR(20), name VARCHAR(20), amount float);
 
-INSERT INTO account VALUES('01', 'Manu', 20000), ('02', 'Sibin', 5000), ('03', 'Vishnu', 10000));
+INSERT INTO account VALUES ('01', 'Manu', 20000), ('02', 'Sibin', 5000), ('03', 'Vishnu', 10000);
 
-SELECT * FROM account
+SELECT * FROM account;

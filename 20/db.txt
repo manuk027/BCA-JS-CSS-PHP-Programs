@@ -1,0 +1,9 @@
+CREATE DATABASE Inventory;
+
+USE Inventory;
+
+CREATE TABLE members (username varchar(10), password varchar(10));
+
+INSERT INTO members VALUES('Manu', 'Manu1234');
+
+SELECT * FROM members;
